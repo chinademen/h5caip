@@ -3,7 +3,7 @@ import Routes from './routes/index';
 import { Provider } from 'mobx-react';
 import stores from './mobx/index'
 
-
+import './less/common.scss'
 
 class App extends Component {
     render() {

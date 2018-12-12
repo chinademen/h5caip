@@ -1,0 +1,191 @@
+.lottery_number{
+    background: #ffffff;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0.5rem;
+    top: 0;
+    overflow-Y: scroll;
+    overflow-X: hidden;
+    .lottery_time{
+        .lottery_time_item{
+            padding: 0.15rem 0;
+            position: relative;
+            &:nth-child(1)::after{
+                content: '';
+                position: absolute;
+                width: 0.01rem;
+                height: 0.4rem;
+                background: #dddcdc;
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+            p{
+                font-size: 0.14rem;
+                color: #666666;
+                line-height: 0.2rem;
+                &:nth-child(2){
+                    color: #108ee9;
+                }
+            }
+        }
+    }
+    .lottery_weishu{
+        border-top: 0.08rem solid #f8f8f8;
+        background: #f8f8f8;
+        .lottery_weishu_title{
+            padding: 0 0.15rem;
+            margin: 0.1rem 0;
+            overflow: hidden;
+            .title{
+                float: left;
+            }
+            .type{
+                float: right;
+                span{
+                    display: inline-block;
+                    margin: 0 10px;
+                }
+            }
+
+        }
+        .lottery_weishu_number{
+            .grid{
+                .item_number{
+                    display: inline-block;
+                    width: 0.45rem;
+                    height: 0.45rem;
+                    border: 1px solid #108ee9;
+                    border-radius: 0.5rem;
+                    text-align: center;
+                    line-height: 0.45rem;
+                }
+            }
+
+        }
+    }
+}
+
+
+.open_lottery{
+    .openLottery_list{
+        ul{
+            display: flex;
+            margin-top: 0.1rem;
+            font-size: 0.12rem;
+            color: #333333;
+            li{
+                text-align: center;
+                padding: 0.1rem 0;
+                &:nth-child(1){
+                    flex: 5
+                }
+                &:nth-child(2){
+                    flex: 4
+                }
+                &:nth-child(3){
+                    flex: 2
+                }
+                &:nth-child(4){
+                    flex: 2
+                }
+                &:nth-child(5){
+                    flex: 3
+                }
+            }
+            &:nth-of-type(even){
+                background: #ffffff;
+            }
+        }
+    }
+}
+
+.game_show{
+    .gameShows_list{
+        .title{
+            padding: 0.2rem 0.15rem;
+            background: #f8f8f8;
+            font-size: 0.16rem;
+            font-weight: bold;
+            color: #333333;
+        }
+        ul{
+            li{
+                display: flex;
+                font-size: 0.14rem;
+                color: #999999;
+                background: #ffffff;
+                justify-content: center;
+                align-items: center;
+                border-bottom: 0.01rem solid #f8f8f8;
+                span{
+                    padding: 0.1rem 0.15rem;
+                    &:nth-child(1){
+                        flex: 1;
+                    }
+                    &:nth-child(2){
+                        flex: 3;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+.lottery_tabBar{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.5rem;
+    background: #ffffff;
+    padding: 0 0 0 0.15rem;
+    box-sizing: border-box;
+    .right{
+        float: right;
+        width: 1rem;
+        height: 0.5rem;
+        background:#108ee9; 
+        text-align: center;
+        line-height: 0.5rem;
+        color: #ffffff;
+        font-size: 0.16rem;
+    }
+    .left{
+        float: left;
+        position: relative;
+        width: 120px;
+        height: 0.3rem;
+        border: 1px solid #108ee9;
+        text-align: center;
+        line-height: 0.3rem;
+        margin-top: 0.1rem;
+        font-size: 0.12rem;
+        color: #108ee9;
+    }
+    .mid{
+        float: left;
+        line-height: 0.5rem;
+        margin-left: 0.1rem;
+        color: #108ee9;
+    }
+}
+
+
+.am-grid .am-flexbox .am-flexbox-item .am-grid-item-content{
+    padding: 0;
+}
+
+.am-tabs-pane-wrap{
+    height: 100%;
+}
+.am-tabs{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}

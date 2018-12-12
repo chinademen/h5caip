@@ -1,19 +1,16 @@
-import React from 'react'
-import { BrowserRouter as Router, Route } from 'react-router-dom'
+import React from "react";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
-import Home from '../page/home';
-import About from '../page/about';
-
-import Ssc from "../page/lottery/ssc"
+import Ssc from "../page/lottery/ssc";
+import chidRouter from "./chidRouter";
 
 const Routes = () => (
     <Router>
-        <div>
-            <Route exact path="/" component={ Home }/>
-            <Route path="/about" component={ About }/>
-            <Route path="/lottery/SSC" component={ Ssc }/>
+        <div className="route">
+            <Route path="/" component={chidRouter} />
+            <Route path="/lottery/SSC" component={Ssc} />
         </div>
     </Router>
-)
+);
 
 export default Routes;
