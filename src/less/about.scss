@@ -1,0 +1,28 @@
+.about{
+    .about_ul{
+        li{
+            display: flex;
+            align-items: center;
+            padding: 0.08rem 0.15rem;
+            background: #fff;
+            border-bottom: 1px solid #f8f8f8;
+            &:active{
+                background: #f8f8f8;
+            }
+            .img_left{
+                width: 0.4rem;
+                height: 0.4rem;
+                margin-right: 0.2rem;
+            }
+            .img_right{
+                width: 0.08rem;
+                height: 0.15rem;    
+            }
+            span{
+                font-size: 0.16;
+                color: #666666;
+                flex: 1;
+            }
+        }
+    }
+}

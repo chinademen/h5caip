@@ -1,0 +1,119 @@
+.accountCenter {
+  margin-bottom: 50px;
+  .money {
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    li {
+        flex: 1;
+        padding: 0.15rem;
+        .a {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            img{
+                width: 0.3rem;
+                height: 0.3rem;
+                margin-bottom: 0.08rem;
+            }
+            p{
+                font-size: 0.14rem;
+                color: #666666;
+            }
+        }
+    }
+  }
+  .management{
+      margin-top: 0.08rem;
+      overflow: hidden;
+      li{
+            background: #fff;
+            width: 50%;
+            padding: 0.15rem;
+            float: left;
+            box-sizing: border-box;
+            border-top: 1px solid #f8f8f8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &:nth-child(odd){
+                border-right: 1px solid #f8f8f8;
+            }
+            .a{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img{
+                    margin-right: 0.2rem;
+                    width: 0.4rem;
+                    height: 0.4rem;
+                }
+                p{
+                    font-size: 0.14rem;
+                    color: #666666;
+                }
+            }
+      }
+  }
+  .setting{
+    margin-top: 0.08rem;
+    overflow: hidden;
+    li{
+        background: #fff;
+        padding: 0.08rem 0.15rem;
+        box-sizing: border-box;
+        border-top: 1px solid #f8f8f8;
+        .a{
+            display: flex;
+            align-items: center;
+            .left{
+                width: 0.4rem;
+                height: 0.4rem;
+                margin-right: 0.2rem;
+            }
+            p{
+                flex: 1;
+                font-size: 0.14rem;
+                color: #666666;
+            }
+            .right{
+                width: 0.08rem;
+                height: 0.15rem;
+            }
+        }
+    }
+  }
+  .user{
+      width: 100%;
+      height: 200px;
+      background: #33A3F4;
+      .user_ifo{
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          .user_img{
+              width: 0.8rem;
+              height: 0.8rem;
+              border-radius: 0.6rem;
+              border: 3px solid #fff;
+          }
+          p{
+              color: #fff;
+          }
+          .user_name{
+              margin-top: 0.1rem;
+              font-size: 0.14rem;
+          }
+          .user_money{
+            margin-top: 0.1rem;
+            font-size: 0.16rem;
+          }
+      }
+  }
+}
+

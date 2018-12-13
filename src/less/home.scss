@@ -1,0 +1,97 @@
+.home_lottery {
+   margin-bottom: 50px;
+  .home_title{
+      margin-top: 0.08rem;
+      padding: 0.08rem 0.15rem;
+      background: #ffffff;
+      font-size: 0.16rem;
+      color: #333333;
+      font-weight: normal;
+  }
+  .home_list{
+      overflow: hidden;
+      width: 100%;
+      li{
+          float: left;
+          width: 50%;
+          box-sizing: border-box;
+          padding: 0.15rem;background: #ffffff;
+          border-top: 1px solid #f8f8f8;
+          font-size: 0.14rem;
+          color: #666666;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          &:nth-child(odd){
+              border-right: 1px solid #f8f8f8;
+          }
+          &:active{
+              background: #f8f8f8;
+          }
+          .list_logo{
+              width: 0.5rem;
+              height: 0.5rem;
+              background: #f8f8f8;
+              border-radius: 0.1rem;
+              margin-right: 0.1rem;
+          }
+          .list_dec{
+              .title{
+                line-height: 0.25rem;
+              }
+              .dec{
+                line-height: 0.25rem;
+                font-size: 0.12rem;
+                color: #108ee9;
+              }
+          }
+      }
+  }
+}
+
+
+.home_gaGame{
+    .home_gaGame_list{
+        margin-top: 0.08rem;
+        li{
+            display: flex;
+            align-items: center;
+            padding: 0.08rem 0.15rem;
+            border-bottom: 1px solid #f8f8f8;
+            background: #ffffff;
+            img{
+                width: 0.5rem;
+                height: 0.5rem;
+                border-radius: 0.1rem;
+            }
+            .home_gaGame_dec{
+                flex: 1;
+                margin-left: 0.1rem;
+                p{
+                    font-size: 0.14rem;
+                    color:#333;
+                    line-height: 0.25rem;
+                    &:nth-child(2){
+                        color: #666666;
+                        font-size: 0.12rem;
+                    }
+                }
+            }
+            .home_gaGame_btn{
+                display: flex;
+                flex-direction: column;
+                a{
+                    padding: 0.03rem 0.1rem;
+                    background: #f8f8f8;
+                    margin: 0.05rem;
+                    color: #333333;
+                    border-radius: 0.1rem;
+                    &:nth-child(1){
+                        color: #ffffff;
+                        background: #33A3F4;
+                    }
+                }
+            }
+        }
+    }
+}
