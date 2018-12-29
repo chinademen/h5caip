@@ -12,6 +12,10 @@ import TraceRecord from "../page/about/traceRecord";
 import GaRecord from "../page/about/gaRecord";
 import MoneyRecord from "../page/about/moneyRecord";
 
+// 下级管理
+import LevelMangement from "../page/me/levelMangement"
+// 人工开户
+import OpeningAccount from "../page/me/openingAccount"
 
 class Routes extends Component {
     render() {
@@ -27,6 +31,8 @@ class Routes extends Component {
                     <Route path="/moneyRecord" component={MoneyRecord} />
 
                     <Route path="/accountCenter" component={AccountCenter} />
+                    <Route path="/LevelMangement" component={LevelMangement} />
+                    <Route path="/OpeningAccount" component={OpeningAccount} />
 
                     <Route path="/lottery/SSC" component={Ssc} />
                 </Switch>

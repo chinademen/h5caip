@@ -13,7 +13,7 @@ class MoneyList extends Component {
                 {this.props.data.map((item, i) => {
                     return (
                         <li key={i}>
-                            <Link className="a" to="/">
+                            <Link className={`a a${i}`} to="/">
                                 <img src={item.img} alt="" />
                                 <p> {item.title} </p>
                             </Link>
@@ -80,16 +80,18 @@ class AccountCenter extends Component {
             ],
             management:[
                 { img:require('../img/userCenter_icon_08.png') ,title:'下级管理'},
-                { img:require('../img/userCenter_icon_08.png') ,title:'人工账户'},
-                { img:require('../img/userCenter_icon_08.png') ,title:'链接开户'},
-                { img:require('../img/userCenter_icon_08.png') ,title:'会员报表'},
-                { img:require('../img/userCenter_icon_08.png') ,title:'下级订单'}
+                { img:require('../img/userCenter_icon_081.png') ,title:'人工开户'},
+                { img:require('../img/userCenter_icon_082.png') ,title:'链接开户'},
+                { img:require('../img/userCenter_icon_083.png') ,title:'会员报表'},
+                { img:require('../img/userCenter_icon_084.png') ,title:'下级订单'},
+                { img:require('../img/userCenter_icon_085.png') ,title:'客服中心'}
             ],
             seting:[
-                { img:require('../img/userCenter_icon_02.png') ,title:'平台公告'},
-                { img:require('../img/userCenter_icon_02.png') ,title:'站内信'},
-                { img:require('../img/userCenter_icon_03.png') ,title:'意见反馈'},
-                { img:require('../img/userCenter_icon_04.png') ,title:'退出登录'},
+                { img:require('../img/icon_1.png') ,title:'平台公告'},
+                { img:require('../img/icon_2.png') ,title:'站内信'},
+                { img:require('../img/icon_3.png') ,title:'意见反馈'},
+                { img:require('../img/icon_4.png') ,title:'账户设置'},
+                { img:require('../img/icon_5.png') ,title:'退出登录'},
             ]
         };
     }
@@ -102,8 +104,8 @@ class AccountCenter extends Component {
                         <p className="user_name"> 测试账号 </p>
                         <p className="user_money"> 账户余额 : 8054.2719 </p>
                     </div>
+                    <MoneyList data={this.state.moneyList} />
                 </div>
-                <MoneyList data={this.state.moneyList} />
                 <Management data={this.state.management} />
                 <Seting data={this.state.seting} />
                 <AppTabBar barActive={2}> </AppTabBar>
