@@ -5,17 +5,14 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "../page/home";
 import About from "../page/about";
 import AccountCenter from "../page/accountCenter";
-import Ssc from "../page/lottery/ssc";
+import lottery from "../page/lottery";
+import aboutIndex from "../page/about";
+import me from "../page/me"
 
-import BetRecord from "../page/about/betRecord";
-import TraceRecord from "../page/about/traceRecord";
-import GaRecord from "../page/about/gaRecord";
-import MoneyRecord from "../page/about/moneyRecord";
-
-// 下级管理
-import LevelMangement from "../page/me/levelMangement"
-// 人工开户
-import OpeningAccount from "../page/me/openingAccount"
+// // 下级管理
+// import LevelMangement from "../page/me/levelMangement"
+// // 人工开户
+// import OpeningAccount from "../page/me/openingAccount"
 
 class Routes extends Component {
     render() {
@@ -23,18 +20,12 @@ class Routes extends Component {
             <Router>
                 <Switch className="route">
                     <Route exact path="/home" component={Home} />
-
                     <Route path="/about" component={About} />
-                    <Route path="/betRecord" component={BetRecord} />
-                    <Route path="/traceRecord" component={TraceRecord} />
-                    <Route path="/gaRecord" component={GaRecord} />
-                    <Route path="/moneyRecord" component={MoneyRecord} />
-
                     <Route path="/accountCenter" component={AccountCenter} />
-                    <Route path="/LevelMangement" component={LevelMangement} />
-                    <Route path="/OpeningAccount" component={OpeningAccount} />
 
-                    <Route path="/lottery/SSC" component={Ssc} />
+                    <Route path="/aboutype/:type" component={aboutIndex} />
+                    <Route path="/lottery/:id" component={lottery} /> 
+                    <Route path="/me/:type" component={me} /> 
                 </Switch>
             </Router>
         );

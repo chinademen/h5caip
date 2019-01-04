@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Tabs, Carousel  } from "antd-mobile";
+import { withRouter } from 'react-router-dom';
 import "../less/home.scss";
 
 import AppTabBar from "../template/appTabBar";
@@ -24,7 +25,15 @@ class Banner extends Component {
 }
 
 // 彩票
+@withRouter
 class Lottery extends Component {
+    constructor(props){
+        super(props);
+        this.handleClickLink = this.handleClickLink.bind(this);
+    }
+    handleClickLink(link){
+        this.props.history.push(link);
+    }   
     render() {
         return (
             <div className="home_lottery">
@@ -33,7 +42,7 @@ class Lottery extends Component {
                 <ul className="home_list">
                     {["重庆时时彩", "重庆11选5", "重庆快三", "重庆低频彩","重庆快三","重庆11选5"].map((item, i) => {
                         return (
-                            <li key={i}>
+                            <li key={i} onClick={()=> { this.handleClickLink('/lottery/1') }}>
                                 <div className="list_logo"></div>
                                 <div className="list_dec">
                                     <p className="title"> {item} </p>
@@ -58,6 +67,7 @@ class Game extends Component {
         )
     }
 }
+
 
 class Home extends Component {
     constructor(props) {
