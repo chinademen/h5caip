@@ -14,6 +14,8 @@ import TopUp from './topUp'
 import Withdrawals from './withdrawals'
 import Transfer from './transfer'
 import VipReport from './vipReport'
+import AnnouncementDetail from './announcementDetail'
+
 
 class Me extends Component {
     render() {
@@ -47,6 +49,8 @@ class Me extends Component {
                 return (<Withdrawals />)
             case 'transfer':            // 转账
                 return (<Transfer />)
+            case 'announcementDetail':            // 转账
+                return (<AnnouncementDetail />)
             default:
                 return (<div> 无相关页面 </div>);
         }

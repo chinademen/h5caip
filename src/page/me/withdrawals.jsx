@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Tabs, Button, DatePicker } from "antd-mobile";
+import { Tabs, Button } from "antd-mobile";
 const nowTimeStamp = Date.now();
 const now = new Date(nowTimeStamp);
 
@@ -54,16 +54,45 @@ class Record extends Component {
     }
 }
 
-// class List  extends Component {
-//     constructor(props) {
-//         super(props)
-//     }
-//     render(){
-//         return(
-
-//         )
-//     }
-// }
+class Yue  extends Component {
+    render(){
+        return(
+            <ul className="yue">
+               <li>
+                   <span> 可提金额: </span>
+                   <span> 1452.03 </span>
+               </li>
+               <li>
+                   <span> 资金密码: </span>
+                   <span> <input type="text"/> </span>
+               </li>
+               <li>
+                   <span> 银行名称: </span>
+                   <span> 中国工商银行 </span>
+               </li>
+               <li>
+                   <span> 卡/存折: </span>
+                   <span> **************389 </span>
+               </li>
+               <li>
+                   <span> 所在地区: </span>
+                   <span> 广东-深圳 </span>
+               </li>
+               <li>
+                   <span> 开户行全称: </span>
+                   <span> 深圳西乡街道工商支行 </span>
+               </li>
+               <li>
+                   <span> 提款金额: </span>
+                   <span> <input type="text"/> </span>
+               </li>
+               <li>
+                    <Button className="btn" type="primary">提交</Button>
+               </li>
+            </ul>
+        )
+    }
+}
 
 class Withdrawals extends Component {
     constructor(props) {
@@ -81,8 +110,8 @@ class Withdrawals extends Component {
         }
         return (
             <div className="withdrawals">
-                <Tabs tabBarInactiveTextColor="#999999" tabBarActiveTextColor="#d13737" tabBarUnderlineStyle={tabBarUnderlineStyle} swipeable={false} tabs={this.state.tabs} initialPage={1}>
-                    <div> 2 </div>
+                <Tabs tabBarInactiveTextColor="#999999" tabBarActiveTextColor="#d13737" tabBarUnderlineStyle={tabBarUnderlineStyle} swipeable={false} tabs={this.state.tabs} initialPage={0}>
+                    <Yue />
                     <Record />
                 </Tabs>
             </div>
