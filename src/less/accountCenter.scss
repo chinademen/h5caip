@@ -392,3 +392,37 @@
         }
     }
 }
+.openLink{
+    ul{
+        li{
+            display: flex;
+            background: #fff;
+            padding: 0.1rem 0.15rem;
+            align-items: center;
+            >span{
+                &:nth-child(1){
+                    color: #333333;
+                    font-size: 14px;
+                }
+                &:nth-child(2){
+                    flex: 1;
+                    padding: 0 0.15rem;
+                }
+                input{
+                    border: 1px solid #ddd;
+                    border-radius: 5px;
+                    padding: 0.08rem 0.15rem;
+                    box-sizing: border-box;
+                }
+            }
+            .btn{
+                width: 100%;
+            }
+        }
+    }
+}
+.levelOrder{
+    .levelOrder_ul{
+        display: flex;
+    }
+}
