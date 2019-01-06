@@ -40,11 +40,11 @@ class Me extends Component {
             case 'openingAccount':      // 人工开户
                 return (<OpeningAccount />)
             case 'openLink':            // 链接开户
-                return (<Withdrawals />)
+                return (<OpenLink />)
             case 'topUp':               // 充值
                 return (<TopUp />)
             case 'withdrawals':         // 提现
-                return (<OpenLink />)
+                return (<Withdrawals />)
             case 'transfer':            // 转账
                 return (<Transfer />)
             default:

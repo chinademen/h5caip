@@ -8,7 +8,8 @@ import TraceRecord from './traceRecord'
 
 class AboutIndex extends Component {
     render() {
-        const { type } = this.props.match.params
+        const { type } = this.props.match.params;
+        console.log(type)
         switch (type) {
             case 'betRecord':
                 return (<BetRecord />)

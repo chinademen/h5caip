@@ -24,7 +24,7 @@ class About extends Component {
                     {this.state.dataList.map((item, i) => {
                         return (
                             <li key={ i }>
-                                 <Link className="a" to={`/${item.key}`}>
+                                 <Link className="a" to={`/aboutype/${item.key}`}>
                                     <img className="img_left" src={item.url} alt="" />
                                     <span> {item.title} </span>
                                     <img className="img_right" src={ require('../img/arrow_r.png') }alt=""/>

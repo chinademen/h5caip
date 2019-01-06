@@ -6,7 +6,7 @@ import Home from "../page/home";
 import About from "../page/about";
 import AccountCenter from "../page/accountCenter";
 import lottery from "../page/lottery";
-import aboutIndex from "../page/about";
+import aboutIndex from "../page/about/index.jsx";
 import me from "../page/me"
 
 // // 下级管理
