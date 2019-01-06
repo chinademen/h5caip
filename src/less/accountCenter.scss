@@ -217,4 +217,178 @@
             }
         }
     }
+    .yue{
+        padding: 0.15rem;
+        li{
+            display: flex;
+            margin-bottom: 0.15rem;
+            align-items: center;
+            >span{
+                &:nth-child(1){
+                    flex: 1;
+                    color: #333333;
+                    font-size: 0.14rem;
+                }
+                &:nth-child(2){
+                    flex: 3;
+                    color: #666666;
+                }
+                input{
+                    border: 1px solid #ddd;
+                    padding:0.08rem 0.15rem;
+                }
+            }
+            .btn{
+                width: 100%;
+                color: #fff;
+            }
+        }
+    }
+}
+
+.transfer{
+    ul{
+        padding: 0.15rem;
+        li{
+            margin-bottom: 0.15rem;
+            display: flex;
+            align-items: center;
+            >span{
+                font-size: 14px;
+                display: flex;
+                &:nth-child(1){
+                    color: #333333;
+                    flex: 1;
+                }
+                &:nth-child(2){
+                    color: #666666;
+                    flex: 2;
+                }
+                >input{
+                    border: 1px solid #ddd;
+                    border-radius: 5px;
+                    padding: 0.08rem 0.15rem;
+                }
+                b{
+                    padding: 0.05rem 0.15rem;
+                    background: #fff;
+                    border-radius: 5px;
+                    margin:0 0.05rem;
+                }
+            }
+            .btn{
+                width: 100%;
+                color: #fff;
+            }
+        }
+    }
+}
+.announcement{
+    ul{
+        li{
+            padding: 0.08rem 0.15rem;
+            display: flex;
+            p{
+                font-size: 14px;
+                color: #333333;
+                &:nth-child(1){
+                    flex: 1;
+                }
+            }
+        }
+    }
+}
+.announcementDetail{
+    padding: 0.15rem;
+    h3{
+        margin-bottom: 0.2rem;
+    }
+    p{
+        text-indent: 2em;
+        color: #666666;
+        line-height: 0.3rem;
+    }
+}
+.feedBack{
+    ul{
+        padding: 0.15rem;
+        li{
+            display: flex;
+            margin-bottom: 0.15rem;
+            >span{
+                &:nth-child(1){
+                    width: 0.5rem;
+                    color: #333333;
+                }
+                &:nth-child(2){
+                    flex: 1;
+                    textarea{
+                        width: 100%;
+                        padding: 0.15rem;
+                        border: 1px solid #ddd;
+                        box-sizing: border-box;
+                    }
+                    input{
+                        padding: 0.08rem 0.15rem;
+                        border: 1px solid #ddd;
+                        box-sizing: border-box;
+                    }
+                }
+            }
+            .btn{
+                width: 100%;
+            }
+        }
+    }
+}
+.insideIfo{
+    ul{
+        background: #fff;
+        li{
+            display: flex;
+            padding: 0.1rem 0.15rem;
+            align-items: center;
+            border-bottom: 1px solid #f8f8f8;
+            div{
+                &:nth-child(1){
+                    flex: 1;
+                }
+                h3{
+                    color: #333333;
+                    font-weight: normal;
+                    font-size: 16px;
+                    margin-bottom: 0.08rem;
+                }
+                p{
+                    font-size: 14px;
+                    color: #666666;
+                }
+            }
+        }
+    }
+    .send_msg{
+        li{
+            display: flex;
+            span{
+                &:nth-child(1){
+                    width: 0.5rem;
+                }
+                input{
+                    border-radius: 5px;
+                    border: 1px solid #ddd;
+                    box-sizing: border-box;
+                    padding: 0.1rem 0.15rem;
+                }
+                textarea{
+                    border-radius: 5px;
+                    border: 1px solid #ddd;
+                    box-sizing: border-box;
+                    padding: 0.1rem 0.15rem;
+                }
+            }
+            .btn{
+                width: 100%;
+            }
+        }
+    }
 }
