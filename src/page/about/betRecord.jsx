@@ -49,40 +49,52 @@ class BetRecord extends Component {
           this.setState({
             data01:[
                 {
+                    label: '重庆时时彩',
                     value: '重庆时时彩',
-                    lable: '重庆时时彩',
                 },
                 {
+                    label: '腾讯分分彩',
                     value: '腾讯分分彩',
-                    lable: '腾讯分分彩',
+                },
+                {
+                    label: '重庆时时彩',
+                    value: '重庆时时彩',
+                },
+                {
+                    label: '腾讯分分彩',
+                    value: '腾讯分分彩',
                 },
             ],
             data02:[
                 {
+                    label: '今天',
                     value: '今天',
-                    lable: '今天',
                 },
                 {
+                    label: '昨天',
                     value: '昨天',
-                    lable: '昨天',
                 },
                 {
+                    label: '近三天',
+                    value: '近三天',
+                },
+                {
+                    label: '近七天',
                     value: '近七天',
-                    lable: '近七天',
                 }
             ],
             data03:[
                 {
+                    label: '已中奖',
                     value: '已中奖',
-                    lable: '已中奖',
                 },
                 {
+                    label: '未中奖',
                     value: '未中奖',
-                    lable: '未中奖',
                 },
                 {
+                    label: '已撤销',
                     value: '已撤销',
-                    lable: '已撤销',
                 }
             ]
 
