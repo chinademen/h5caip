@@ -171,9 +171,13 @@ class SSC extends Component {
         };
     }
     render() {
+        const tabBarUnderlineStyle ={
+            border:'1px solid #3d9bff'
+        }
+
         return (
             <div>
-                <Tabs tabs={this.state.tabs} initialPage={0} >
+                <Tabs tabBarInactiveTextColor="#999999" tabBarUnderlineStyle={tabBarUnderlineStyle} tabBarActiveTextColor="#3d9bff" tabs={this.state.tabs} initialPage={0} >
                     <div className="lottery_number">
                         <LotteryTypes />
                     </div>

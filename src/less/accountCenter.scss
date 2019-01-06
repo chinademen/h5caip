@@ -392,3 +392,115 @@
         }
     }
 }
+.openLink{
+    ul{
+        li{
+            display: flex;
+            background: #fff;
+            padding: 0.1rem 0.15rem;
+            align-items: center;
+            >span{
+                &:nth-child(1){
+                    color: #333333;
+                    font-size: 14px;
+                }
+                &:nth-child(2){
+                    flex: 1;
+                    padding: 0 0.15rem;
+                }
+                input{
+                    border: 1px solid #ddd;
+                    border-radius: 5px;
+                    padding: 0.08rem 0.15rem;
+                    box-sizing: border-box;
+                }
+            }
+            .btn{
+                width: 100%;
+            }
+        }
+    }
+}
+.levelOrder{
+    .levelOrder_title{
+        display: flex;
+        background: #fff;
+        li{
+            flex: 1;
+            padding: 0.15rem 0;
+            p{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .arrow_b{
+                    width: 0.11rem;
+                    height: 0.07rem;
+                    background: url(../img/arrow_b.png) no-repeat;
+                    background-size: 100%;
+                    margin-left: 0.1rem;
+                } 
+            }
+        }
+    }
+    .levelOrder_input{
+        padding: 0.15rem;
+        li{
+            display: flex;
+            align-items: center;
+            margin: 0.1rem 0;
+            span{
+                &:nth-child(2){
+                   flex: 1;
+                }
+                input{
+                    border: 1px solid #ddd;
+                    border-radius: 5px;
+                    padding: 0.08rem 0.15rem;
+                    margin-left: 0.15rem;
+                }
+            }
+            .btn{
+                width: 100%;
+            }
+        }
+    }
+    .table{
+        overflow: auto;
+        table{
+            width: 100%;
+            th{
+                color: #666666;
+                min-width: 100px;
+                padding: 0.08rem;
+                border-bottom: 1px solid #ddd;
+            }
+            td{
+                color: #999999;
+                text-align: center;
+                padding: 0.08rem;
+                border-bottom: 1px solid #ddd;
+            }
+        }
+    }
+
+}
+.vipReport{
+    .levelOrder_input{
+        li{
+            display: flex;
+            margin-bottom: 0.2rem;
+            div{
+                flex: 1;
+                p{
+                    text-align: center;
+                }
+            }
+            &:nth-child(1){
+                p{
+                    text-align: center;
+                    flex: 1;
+                }
+            }
+        }
+    }
+}

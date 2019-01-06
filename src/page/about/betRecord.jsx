@@ -1,7 +1,6 @@
 //追号记录
 import React, { Component } from "react";
 import { Picker } from 'antd-mobile';
-import AppTabBar from "../../template/appTabBar";
 import { withRouter } from 'react-router-dom';
 
 @withRouter
@@ -155,7 +154,7 @@ class BetRecord extends Component {
                         })}
                     </ul>
                 </div>
-                <AppTabBar barActive={ 1 } > </AppTabBar>
+               
             </div>
         );
     }
