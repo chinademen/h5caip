@@ -31,3 +31,139 @@
         }
     }
 }
+.seachType{
+    height: 0.45rem;
+    line-height: 0.45rem;
+    color: #333;
+    text-align: center;
+    font-size: 0.16rem;
+    display: flex;
+    background: #fff;
+    border-bottom: 0.01rem #dfdfdf solid;
+    box-shadow: 0 0 0.02rem #dfdfdf;
+    div{
+        width: 33.3%;
+        border-right:0.01rem solid #dfdfdf;
+        p{
+            display: inline-block;
+            .arrow_b{
+                display: inline-block;
+                float: right;
+                width: 0.11rem;
+                height: 0.07rem;
+                background: url(../img/arrow_b.png) no-repeat;
+                background-size: 100%;
+                margin: 0.2rem -0.18rem 0 0;
+            }  
+        }
+        
+         
+    }
+    div:nth-last-child(1){
+        border: none;
+    }
+}
+.recordList{
+    margin-top:0.1rem;
+    background-color: #fff;
+    border-top: 0.01rem solid #dfdfdf;
+    overflow: hidden;
+    .list_item{
+        padding: 0.15rem;
+        overflow: hidden;
+        border-bottom: 0.01rem solid #dfdfdf;
+        .recordMain{
+            float: left;
+            color: #666;
+            width: 94%;
+            .record_t{
+                overflow: hidden;
+                .name{
+                    color: #333;
+                    font-size: 0.16rem;
+                }
+                .period{
+                    padding-left: 0.08rem;
+                    color: #999;
+                    font-size: 0.13rem;
+                }
+                .state{
+                    font-size: 0.16rem;
+                    
+                }
+                .red{
+                        color: #e5313d;
+                }
+            }
+            .record_b{
+                padding-top: 0.1rem;
+                color: #999;
+                font-size: 0.13rem;
+            }
+        } 
+        .arrow_r{
+            float: left;
+            width: 6%;
+            span{
+                width: 0.08rem;
+                height: 0.15rem;
+                background: url(../img/arrow_r.png) no-repeat;
+                background-size: 100%;
+                float: left;
+                margin-top: 0.15rem;
+                margin-left: 0.15rem;
+            }
+        }
+        .fl{
+            float: left;
+        }
+        .fr{
+            float: right;
+        }
+    }
+    
+}
+.detailWrap{
+    background-color: #fff;
+    overflow: hidden;
+    .detailTop{
+        height: 0.55rem;
+        line-height: 0.55rem;
+        font-size: 0.16rem;
+        background-color: #ededed;
+        color: #333;
+        padding: 0 0.16rem;
+        .orderNum{
+            margin-left:0.15rem
+        }
+        .state{
+            margin-left:0.7rem;
+            color:#999;
+            font-size: 0.15rem;
+        }
+    }
+    .detailMain{
+        padding: 0.16rem;
+        line-height: 0.27rem;
+        color: #666;
+    }
+    .specail{
+        border-top: 0.01rem solid #dfdfdf;
+        padding: 0.2rem;
+        color: #666;
+        .noteNum{
+            margin-left: 0.7rem;
+        }
+    }
+    .btn{
+        height: .45rem;
+        line-height: 0.45rem;
+        text-align: center;
+        color: #fff;
+        font-size: 0.2rem;
+        background: #3d9bff;
+        bottom: 0;
+        width: 100%;
+        margin-top: 2.65rem;
+    }
+}

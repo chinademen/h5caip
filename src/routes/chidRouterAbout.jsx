@@ -14,6 +14,7 @@ class AboutIndex extends Component {
         return (
             <Switch>
                 <Route exact  path={`${match.url}/betRecord`} component={BetRecord} />
+                <Route exact  path={`${match.url}/betRecord`} component={BetRecord} />
                 <Route exact  path={`${match.url}/traceRecord`} component={TraceRecord} />
                 <Route exact  path={`${match.url}/gaRecord`}  component={GaRecord} />
                 <Route exact  path={`${match.url}/moneyRecord`} component={MoneyRecord} />
