@@ -1,6 +1,6 @@
 // 注单详情
 import React, { Component } from "react";
-class recordDetail extends Component {
+class traceDetail extends Component {
     constructor(props){
         super(props);
         this.state={
@@ -9,7 +9,7 @@ class recordDetail extends Component {
                     orderNum:'BNC122546853',
                     name:"重庆时时彩",//彩票名称
                     period:"20012568",//期数
-                    state:"未中奖",//中奖状态
+                    state:"进行中",//状态
                     date:"2018-11-03 12:00:03",
                     ammount:'3200',
                     type:"2元",
@@ -35,13 +35,10 @@ class recordDetail extends Component {
                                 <span className="state">{item.state}</span>
                             </div>
                             <div className="detailMain">
-                                <p>订单编号 ：{item.orderNum} </p>
+                                <p>追号单编号 ：{item.orderNum} </p>
                                 <p>购买时间 ：{item.date} </p>
                                 <p>投注倍数 ：{item.orderNum} </p>
-                                <p>订单金额 ：{item.ammount} </p>
-                                <p>模式 ：{item.type} </p>
-                                <p>开奖号码 ：{item.num} </p>
-                                <p>中奖金额 ：{item.prize} </p>                            
+                                <p>投注金额 ：{item.ammount} </p>                            
                             </div>
                             <p className="specail">
                                 <p className="detail">投注明细 : </p>   
@@ -55,4 +52,4 @@ class recordDetail extends Component {
         );
     }
 }
-export default recordDetail;
+export default traceDetail;

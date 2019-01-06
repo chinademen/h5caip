@@ -8,6 +8,7 @@ import AccountCenter from "../page/accountCenter";
 import lottery from "../page/lottery";
 import aboutIndex from "../page/about/index.jsx";
 import recordDetail from "../page/about/recordDetail.jsx";
+import traceDetail from "../page/about/traceDetail.jsx";
 import me from "../page/me"
 
 // // 下级管理
@@ -24,6 +25,7 @@ class Routes extends Component {
                     <Route path="/about" component={About} />
                     <Route path="/accountCenter" component={AccountCenter} />
                     <Route path="/aboutype/recordDetail" component={recordDetail} />
+                    <Route path="/aboutype/traceDetail" component={traceDetail} />
                     <Route path="/aboutype/:type" component={aboutIndex} />
                     <Route path="/lottery/:id" component={lottery} /> 
                     <Route path="/me/:type" component={me} /> 

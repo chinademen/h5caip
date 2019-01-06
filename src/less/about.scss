@@ -151,6 +151,9 @@
         border-top: 0.01rem solid #dfdfdf;
         padding: 0.2rem;
         color: #666;
+        .detail{
+            padding-bottom:0.1rem; 
+        }
         .noteNum{
             margin-left: 0.7rem;
         }
@@ -163,7 +166,39 @@
         font-size: 0.2rem;
         background: #3d9bff;
         bottom: 0;
-        width: 100%;
-        margin-top: 2.65rem;
+        width: 90%;
+        margin: 1.65rem auto 0;
+        border-radius: 0.05rem;
+    }
+}
+.AGRecord{
+    background-color: #fff;
+    .seachType{
+        div{
+            width: 49.9%;
+        }
+    }   
+    .balance{
+        height: 0.5rem;
+        line-height: 0.5rem;
+        text-align: center;
+        font-size: 0.16rem;
+        .red{
+            color: #e5313d
+        }
+        .blue{
+            color: #3d9bff
+        }
+    }
+    .AGrecordList{
+        table{
+            width: 100%;
+            text-align: center;
+            border-collapse:collapse;
+            td{
+                border: 0.01rem solid #dfdfdf;
+                height: 0.3rem;
+            }
+        }
     }
 }
