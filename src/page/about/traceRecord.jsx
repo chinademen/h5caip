@@ -55,15 +55,7 @@ class TraceRecord extends Component {
                 {
                     label: '腾讯分分彩',
                     value: '腾讯分分彩',
-                },
-                {
-                    label: '重庆时时彩',
-                    value: '重庆时时彩',
-                },
-                {
-                    label: '腾讯分分彩',
-                    value: '腾讯分分彩',
-                },
+                }
             ],
             data02:[
                 {

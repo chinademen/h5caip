@@ -47,7 +47,6 @@
         p{
             display: inline-block;
             .arrow_b{
-                display: inline-block;
                 float: right;
                 width: 0.11rem;
                 height: 0.07rem;
@@ -198,6 +197,32 @@
             td{
                 border: 0.01rem solid #dfdfdf;
                 height: 0.3rem;
+            }
+        }
+    }
+}
+.moneyRecord{
+    ul{
+        li{
+            display: flex;
+            background: #fff;
+            padding: 0.08rem 0.15rem;
+            align-items: center;
+            margin-bottom: 0.02rem;
+            span{
+                &:nth-child(1){
+                    flex: 1;
+                }
+                h3{
+                    color: #333;
+                    font-weight: normal;
+                    font-size: 16px;
+                    margin-bottom: 0.08rem;
+                }
+                p{
+                    color: #666;
+                    font-size: 14px;
+                }
             }
         }
     }

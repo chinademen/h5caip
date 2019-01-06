@@ -26,10 +26,10 @@ class traceDetail extends Component {
     render() {
         return (
             <div className="recordDetail">
-                {this.state.data.map((item) => {
+                {this.state.data.map((item,i) => {
                     return (                          
-                        <div className="detailWrap">
-                            <div className="detailTop">
+                        <div className="detailWrap" key={i}>
+                            <div className="detailTop" >
                                 <span>{item.name}</span>
                                 <span className="orderNum">{item.period}</span>
                                 <span className="state">{item.state}</span>
@@ -40,10 +40,10 @@ class traceDetail extends Component {
                                 <p>投注倍数 ：{item.orderNum} </p>
                                 <p>投注金额 ：{item.ammount} </p>                            
                             </div>
-                            <p className="specail">
+                            <div className="specail">
                                 <p className="detail">投注明细 : </p>   
                                 <span>{item.play}</span><span className="noteNum">{item.detail}</span><span className="noteNum">{item.noteNum}注</span>
-                            </p>
+                            </div>
                             <div className="btn">撤单</div>
                         </div>
                     );
