@@ -1,0 +1,98 @@
+.login{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #222222;
+    background-image: url('../img/logobg.png');
+    background-position: center;
+    background-size: cover;
+    .loginMain{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+        text-align: center;
+        .loginMainLogo{
+            width: 0.805rem;
+            height: 1.41rem;
+            display: inline-block;
+            background: url('../img/logo.png');
+            background-size: cover;
+            margin-bottom: 0.6rem;
+        }
+        .loginForm{
+            >div{
+                width: 2.25rem;
+                height: 0.45rem;
+                border: 1px solid #d3d3d3;
+                border-radius: 0.45rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 0.2rem;
+                input{
+                    border: none;
+                    background: #222222;
+                    color: #fff;
+                }
+                span{
+                    width: 0.16rem;
+                    height: 0.16rem;
+                    margin-right: 0.1rem;
+                }
+            }
+            .loginUserName{
+                span{
+                    background: url('../img/username.png') no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                }
+            }
+            .loginPassword{
+                margin-bottom: 0.25rem;
+                span{
+                    background: url('../img/yonghuming.png') no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                }
+            }
+            .loginBtn{
+                border: none;
+                background: #cf1232;
+                color: #fff;
+                font-size: 0.18rem;
+            }
+            .loginTip{
+                border: none;
+                text-align: inherit;
+                display: inherit;
+                height: 0.9rem;
+                span{
+                    width: auto;
+                    margin-right: 0;
+                    color: #c1c1c1;
+                    &:nth-child(1){
+                        float: left;
+                    }
+                    &:nth-child(2){
+                        float: right;
+                        display: flex;
+                        align-items: center;
+                        b{
+                            width: 0.18rem;
+                            height: 0.14rem;
+                            background: url('../img/sevice.png');
+                            background-position: center;
+                            background-size: cover;
+                            margin-right: 0.05rem;
+                            font-weight: normal;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
