@@ -426,3 +426,82 @@
         }
     }
 }
+.pop{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:rgba(0, 0, 0, 0.3);
+    .popMain{
+        width: 3.2rem;
+        overflow: hidden;
+        position: absolute;
+        background-color: #fff;
+        top:50%;
+        left: 50%;;
+        z-index: 3;
+        transform: translate(-50%,-50%);
+        .tit{
+            height: 0.5rem;
+            line-height: 0.5rem;
+            background-color: #3d9bff;
+            text-align: center;
+            font-size: 0.18rem;
+            color: #fff;
+        }
+        .top{
+            padding: 0.15rem 0.2rem;
+            background-color: #f7f7fa;
+            border-bottom:0.01rem solid #e2e2e2;
+            .l_name{
+                color: #333;
+                font-size: 0.17rem;
+                line-height: 0.3rem;
+            }
+            .l_pired{
+                color: #999999;
+                font-size: 0.14rem;
+            }
+        }
+        ul{
+            padding: 0.15rem 0.2rem;
+            line-height: 0.28rem;
+            span{
+                color: #999;
+            }
+            .money{
+                color: #ee7e45
+            }
+        }
+        .btn_order{
+            height: 0.7rem;
+            padding-top: 0.1rem;
+            box-shadow: 0 0 0.06rem #e4e4e4;
+            display: flex;
+            p{
+                height: 0.5rem;
+                line-height: 0.5rem;
+                background-color: #3d9bff;
+                text-align: center;
+                font-size: 0.18rem;
+                color: #fff;
+                width: 95%;
+                margin: 0 auto;
+            }
+            .goBet{
+                width: 45%; 
+                background-color: #999;
+                color: #fff;           
+            }
+            .goRecord{
+                width: 45%; 
+            }
+        }
+    }
+    
+}
+.none
+{
+    display: none;
+}

@@ -127,6 +127,45 @@ class BetRecord extends Component {
                         </div>
                     </div>
                 </div>
+                <div className="pop none">
+                        <div className="popMain">
+                            <p className="tit">确认投注</p>
+                            <div class="top">
+                                <p className="l_name">重庆时时彩</p>
+                                <p className="l_pired">期号：20170129-111</p>
+                            </div>                      
+                            <ul>
+                                <li>是否追号：<span>是</span></li>
+                                <li>单倍注数：<span>1001注</span></li>
+                                <li>模 式：<span>元模式</span></li>
+                                <li>倍 数：<span>3倍</span></li>
+                                <li>追号期数：<span>3</span></li>
+                                <li>总金额： <span className="money">￥12358.05</span></li>
+                            </ul>
+                            <div className="btn_order"> <p>确认投注</p> </div>
+                        </div>
+                </div>
+                <div className="pop">
+                        <div className="popMain">
+                            <p className="tit">确认投注</p>
+                            <div class="top">
+                                <p className="l_name">重庆时时彩</p>
+                                <p className="l_pired">期号：20170129-111</p>
+                            </div>                      
+                            <ul>
+                                <li>是否追号：<span>是</span></li>
+                                <li>单倍注数：<span>1001注</span></li>
+                                <li>模 式：<span>元模式</span></li>
+                                <li>倍 数：<span>3倍</span></li>
+                                <li>追号期数：<span>3</span></li>
+                                <li>总金额： <span className="money">￥12358.05</span></li>
+                            </ul>
+                            <div className="btn_order"> 
+                                <p className="goBet">继续投注</p> 
+                                <p className="goRecord">查看投注记录</p> 
+                            </div>
+                        </div>
+                </div>
                
             </div>
         );
