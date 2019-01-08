@@ -7,9 +7,16 @@
     top: 0;
     overflow-Y: scroll;
     overflow-X: hidden;
+    .lottery_type{
+        height: 0.4rem;
+        background: #ededed;
+        padding: 0 0.15rem;
+        box-sizing: border-box;
+    }
     .lottery_time{
+        box-shadow: 0px 3px 2px 0px rgba(16, 16, 16, 0.05),inset 0px 1px 0px 0px rgba(230, 230, 230, 0.004);
         .lottery_time_item{
-            padding: 0.15rem 0;
+            padding: 0.08rem 0;
             position: relative;
             &:nth-child(1)::after{
                 content: '';
@@ -23,43 +30,63 @@
             }
             p{
                 font-size: 0.14rem;
-                color: #666666;
+                color: #999999;
                 line-height: 0.2rem;
                 &:nth-child(2){
-                    color: #108ee9;
+                    color: #ff4f5c;
+                    font-size: 0.18rem;
                 }
             }
         }
     }
     .lottery_weishu{
-        border-top: 0.08rem solid #f8f8f8;
-        background: #f8f8f8;
+        border-top: 0.08rem solid #ededed;
+        background: #ededed;
+        border-top: 1px solid #d9d9d9;
         .lottery_weishu_title{
             padding: 0 0.15rem;
             margin: 0.1rem 0;
             overflow: hidden;
             .title{
                 float: left;
+                width: 0.45rem;
+                height: 0.2rem;
+                background: url('../img/digit_tab.png');
+                background-position: center;
+                background-size: cover;
+                padding-left: 0.05rem;
+                line-height: 0.2rem;
+                color: #ffffff;
             }
             .type{
                 float: right;
                 span{
                     display: inline-block;
                     margin: 0 10px;
+                    color: #b2b2b2;
                 }
             }
 
         }
         .lottery_weishu_number{
+            background: #ededed;
             .grid{
                 .item_number{
                     display: inline-block;
-                    width: 0.45rem;
-                    height: 0.45rem;
-                    border: 1px solid #108ee9;
+                    width: 0.4rem;
+                    height: 0.4rem;
+                    border: 1px solid #cccccc;
                     border-radius: 0.5rem;
                     text-align: center;
-                    line-height: 0.45rem;
+                    line-height: 0.4rem;
+                    background: #ffffff;
+                    font-size: 0.18rem;
+                    color: #666666;
+                }
+                .item_number.active{
+                    border: none;
+                    background: #3d9bff;
+                    color: #ffffff;
                 }
             }
 
@@ -141,14 +168,14 @@
     left: 0;
     width: 100%;
     height: 0.5rem;
-    background: #ffffff;
+    background: #3c4960;
     padding: 0 0 0 0.15rem;
     box-sizing: border-box;
     .right{
         float: right;
-        width: 1rem;
+        width: 0.9rem;
         height: 0.5rem;
-        background:#108ee9; 
+        background:#3d9bff; 
         text-align: center;
         line-height: 0.5rem;
         color: #ffffff;

@@ -24,14 +24,14 @@ class LotteryTypes extends Component {
         return (
             <div>
                 <Grid
-                    itemStyle={{ height: "0.6rem", background: "#f8f8f8" }}
+                    itemStyle={{ height: "0.6rem", background: "#ededed" }}
                     className="grid"
                     activeStyle={false}
                     data={data}
                     columnNum={5}
                     hasLine={false}
                     renderItem={dataItem => (
-                        <div className="item_number"> {dataItem.text} </div>
+                        <div className={`item_number ${dataItem.text === '3' && "active"}`}> {dataItem.text} </div>
                     )}
                 />
             </div>
@@ -59,6 +59,10 @@ class LotteryTypes extends Component {
                     </Flex.Item>
                 </Flex>
                 
+                <div className="lottery_type">
+                    
+                </div>
+
                 {["万", "千", "百", "十", "个"].map((val, i) => {
                     return (
                         <div className="lottery_weishu" key={i}>
@@ -77,7 +81,7 @@ class LotteryTypes extends Component {
                 <div className="lottery_tabBar">
                     <div className="left">19600.000/0.0%</div>
                     <div className="mid">0注</div>
-                    <div className="right"> 确认 </div>
+                    <div className="right"> 确定 </div>
                 </div>
             </div>
         );
