@@ -6,6 +6,7 @@ import Home from "../page/home";
 import About from "../page/about";
 import AccountCenter from "../page/accountCenter";
 import lottery from "../page/lottery";
+import basket from "../page/lottery/basket.jsx";
 import aboutIndex from "../page/about/index.jsx";
 import recordDetail from "../page/about/recordDetail.jsx";
 import traceDetail from "../page/about/traceDetail.jsx";
@@ -31,6 +32,7 @@ class Routes extends Component {
                     <Route exact path="/aboutype/traceDetail" component={traceDetail} />
                     <Route exact path="/aboutype/:type" component={aboutIndex} />
                     <Route exact path="/lottery/:id" component={lottery} /> 
+                    <Route exact path="/basket" component={basket} />
                     <Route exact path="/me/:type" component={me} /> 
                 </Switch>
             </Router>
