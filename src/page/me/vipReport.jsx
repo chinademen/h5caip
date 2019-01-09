@@ -103,7 +103,7 @@ class VipReport extends Component {
 
                 </ul>
                 <div className="table">
-                    <table cellspacing="0px" >
+                    <table cellSpacing="0px" >
                         <thead>
                             <tr>
                                 <th> 账号 </th>

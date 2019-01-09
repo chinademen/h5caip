@@ -2,6 +2,9 @@
 import React, { Component } from "react";
 import { Picker } from 'antd-mobile';
 import "../../less/lottery.scss";
+import AppNav from "../../template/appNav"
+import { withRouter } from 'react-router-dom';
+@withRouter
 class BetRecord extends Component {
     constructor(props){
         super(props);
@@ -9,6 +12,8 @@ class BetRecord extends Component {
             datavalue1:'2元',
             data01:[],
             datavalue2:'1',
+            show:false,
+            show1:false,
             data:[
                 {
                     play:"后三直选",//彩票名称
@@ -64,8 +69,15 @@ class BetRecord extends Component {
     } 
     render() {
         const { datavalue1,datavalue2 } = this.state
+        const parm = {
+            title: "号码蓝",
+            classNameLeft: "",
+            classNameRight: "",
+            show: true,
+        }
         return (
             <div className="basket">
+            <AppNav data={parm} />
                 <div className="basketTop">
                     <p className="preid">20170124-067期</p>
                     <p className="time">00 : 05 : 32</p>
@@ -120,13 +132,13 @@ class BetRecord extends Component {
                             <div className="left">
                                 总注数<span> 20 </span>注，总金额 <span> 400.00 </span> 元<br/> 余额 <span> 8452.00 </span>元
                             </div>
-                            <div className="right">
+                            <div className="right" onClick={()=>{ this.setState({ show:true }) }}>
                                 确认投注
                             </div>
                         </div>
                     </div>
                 </div>
-                <div className="pop none">
+                <div className={this.state.show?"pop":"pop none"} onClick={()=>{ this.setState({ show:false })}} >
                         <div className="popMain">
                             <p className="tit">确认投注</p>
                             <div className="top">
@@ -141,10 +153,10 @@ class BetRecord extends Component {
                                 <li>追号期数：<span>3</span></li>
                                 <li>总金额： <span className="money">￥12358.05</span></li>
                             </ul>
-                            <div className="btn_order"> <p>确认投注</p> </div>
+                            <div className="btn_order" onClick={()=>{ this.setState({ show1:true })}}  > <p>投注成功</p> </div>
                         </div>
                 </div>
-                <div className="pop none">
+                <div className={this.state.show1?"pop":"pop none"} onClick={()=>{ this.setState({ show1:false })}}>
                         <div className="popMain">
                             <p className="tit">确认投注</p>
                             <div className="top">
@@ -160,8 +172,8 @@ class BetRecord extends Component {
                                 <li>总金额： <span className="money">￥12358.05</span></li>
                             </ul>
                             <div className="btn_order"> 
-                                <p className="goBet">继续投注</p> 
-                                <p className="goRecord">查看投注记录</p> 
+                                <p className="goBet" onClick={()=>{ this.props.history.push('/lottery/1'); }}>继续投注</p> 
+                                <p className="goRecord" onClick={()=>{ this.props.history.push('/aboutype/betRecord'); }}>查看投注记录</p> 
                             </div>
                         </div>
                 </div>

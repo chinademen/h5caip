@@ -123,7 +123,7 @@ class LevelOrder extends Component {
                     </li>
                 </ul>
                 <div className="table">
-                    <table cellspacing="0px"  >
+                    <table cellSpacing="0px"  >
                         <thead>
                             <tr>
                                 <th> 订单编号 </th>

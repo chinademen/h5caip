@@ -3,7 +3,7 @@
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 1rem;
+    bottom: 1.45rem;
     top: 0;
     overflow-Y: scroll;
     overflow-X: hidden;
@@ -164,40 +164,88 @@
 
 .lottery_tabBar{
     position: fixed;
-    bottom: 0.5rem;
     left: 0;
     width: 100%;
-    height: 0.5rem;
-    background: #3c4960;
-    padding: 0 0 0 0.15rem;
-    box-sizing: border-box;
-    .right{
-        float: right;
-        width: 0.9rem;
+    bottom: 0.5rem;
+    height: 0.95rem;
+    .top{
+        height: 0.45rem;
+        background: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        span{
+            border-style: solid;
+            border-width: 1px;
+            border-color: rgb(195, 195, 195);
+            border-radius: 0.04rem;
+            background-color: rgba(61, 155, 255, 0);
+            width: 1.57rem;
+            height: 0.32rem;
+            margin: 0 0.075rem;
+            text-align: center;
+            line-height: 0.32rem;
+            box-sizing: border-box;
+            color: #3d9bff;
+        }
+    }
+    .down{
         height: 0.5rem;
-        background:#3d9bff; 
-        text-align: center;
-        line-height: 0.5rem;
-        color: #ffffff;
-        font-size: 0.16rem;
-    }
-    .left{
-        float: left;
-        position: relative;
-        width: 120px;
-        height: 0.3rem;
-        border: 1px solid #108ee9;
-        text-align: center;
-        line-height: 0.3rem;
-        margin-top: 0.1rem;
-        font-size: 0.12rem;
-        color: #108ee9;
-    }
-    .mid{
-        float: left;
-        line-height: 0.5rem;
-        margin-left: 0.1rem;
-        color: #108ee9;
+        background: #3c4960;
+        padding: 0 0 0 0.15rem;
+        box-sizing: border-box;
+        .right{
+            float: right;
+            width: 0.9rem;
+            height: 0.5rem;
+            background:#3d9bff; 
+            text-align: center;
+            line-height: 0.5rem;
+            color: #ffffff;
+            font-size: 0.16rem;
+        }
+        .left{
+            float: left;
+            position: relative;
+            width: 1.2rem;
+            height: 0.34rem;
+            border: 1px solid rgb(61, 155, 255);
+            text-align: center;
+            line-height: 0.34rem;
+            margin-top: 0.08rem;
+            font-size: 0.14rem;
+            color: #3d9bff;              
+        }
+        .more{
+            float: left;
+            width: 0.34rem;
+            height: 0.34rem;
+            border-right: 1px solid rgb(61, 155, 255);
+            border-top: 1px solid rgb(61, 155, 255);
+            border-bottom: 1px solid rgb(61, 155, 255);
+            margin-top: 0.08rem;
+            background: url('../img/more.png') center no-repeat;
+            background-size: 0.15rem 0.085rem;
+        }
+        .mid{
+            float: left;
+            line-height: 0.5rem;
+            margin-left: 0.1rem;
+            color: #ffffff;
+            font-size: 14px;
+            b{
+                color:#ff4f5c ;
+            }
+        }
+        .dele{
+            width: 0.145rem;
+            height: 0.155rem;
+            background: url('../img/dele.png') center no-repeat;
+            float: right;
+            background-size: cover;
+            margin-top: 0.1725rem;
+            margin-right: 0.15rem;
+        }
     }
 }
 
@@ -433,6 +481,7 @@
     width: 100%;
     height: 100%;
     background:rgba(0, 0, 0, 0.3);
+    display: block;
     .popMain{
         width: 3.2rem;
         overflow: hidden;

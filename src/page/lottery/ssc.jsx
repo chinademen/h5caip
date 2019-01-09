@@ -1,11 +1,19 @@
 import React, { Component } from "react";
 import { Tabs, Flex, Grid } from "antd-mobile";
 import { withRouter } from 'react-router-dom';
+import { Picker } from 'antd-mobile';
 import "../../less/lottery.scss";
 
 // 彩种组件
 @withRouter
 class LotteryTypes extends Component {
+    constructor(props){
+        super(props)
+        this.state = {
+            data01: [],
+            datavalue1:'19600.000/0.0%'
+        }
+    }
     chooseNumber() {
         return (
             <div>
@@ -38,6 +46,22 @@ class LotteryTypes extends Component {
             </div>
         );
     }
+    onClick = () => {
+        setTimeout(() => {
+            this.setState({
+                data01: [
+                    {
+                        label: '19600.000/0.0%',
+                        value: '19600.000/0.0%',
+                    },
+                    {
+                        label: '18000.000/2.0%',
+                        value: '18000.000/2.0%',
+                    }
+                ]
+            });
+        }, 120);
+    };
     render() {
         return (
             <div>
@@ -60,9 +84,9 @@ class LotteryTypes extends Component {
                     </Flex.Item>
                 </Flex>
 
-                <div className="lottery_type">
+                {/* <div className="lottery_type">
 
-                </div>
+                </div> */}
 
                 {["万", "千", "百", "十", "个"].map((val, i) => {
                     return (
@@ -80,9 +104,25 @@ class LotteryTypes extends Component {
                     );
                 })}
                 <div className="lottery_tabBar">
-                    <div className="left">19600.000/0.0%</div>
-                    <div className="mid">0注</div>
-                    <div className="right"  onClick={() => {  this.props.history.push('/basket'); }}> 确定 </div>
+                    <div className="top">
+                        <span> 加入收藏 </span>
+                        <span onClick={() => { this.props.history.push('/basket'); }}> 我的收藏 </span>
+                    </div>
+                    <div className="down">
+                        <div className="left">
+                            <Picker
+                                data={this.state.data01}
+                                cols={1}
+                                onOk={v => this.setState({ datavalue1: v })}
+                            >
+                                <span onClick={this.onClick}> {this.state.datavalue1}</span>
+                            </Picker>
+                        </div>
+                        <span className="more" onClick={this.onClick}></span>
+                        <div className="mid">共<b>0</b>注</div>
+                        <div className="right" onClick={() => { this.props.history.push('/basket'); }}> 确定 </div>
+                        <div className="dele">  </div>
+                    </div>
                 </div>
             </div>
         );
@@ -188,7 +228,7 @@ class SSC extends Component {
                         <b onClick={() => { window.history.go(-1) }} className="show"></b>
                     </span>
                     <h3 className="navTitle"> 重庆时时彩-五星直选 </h3>
-                    <span className="navBtn" onClick={() => {  window.open('/chat','_self') }}>
+                    <span className="navBtn" onClick={() => { window.open('/chat', '_self') }}>
                         <b className="chat"></b>
                     </span>
                 </div>
