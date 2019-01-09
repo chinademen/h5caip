@@ -4,13 +4,20 @@ const RadioItem = Radio.RadioItem;
 class About extends Component {
     state = {
         value: 0,
-    };
+    }
+    constructor(props){
+        super(props);
+        this.handlePush = this.handlePush.bind(this);
+    }
     onChange = (value) => {
         console.log('checkbox');
         this.setState({
             value,
         });
     };
+    handlePush(link){
+        this.props.history.push(link);
+    }
     render() {
         const { value, value2, value3, value4 } = this.state;
         const data = [
@@ -31,7 +38,7 @@ class About extends Component {
                         </div>
                     ))}
                 </List>
-                <div class="nextBtn">下一步</div>
+                <div className="nextBtn"  onClick={ ()=>{ this.handlePush('/me/announcementDetail') }}>下一步</div>
             </div>
         );
     }

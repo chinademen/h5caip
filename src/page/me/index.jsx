@@ -11,6 +11,7 @@ import LogOut from './logOut'
 import OpeningAccount from './openingAccount'
 import OpenLink from './openLink'
 import TopUp from './topUp'
+import Charge from './charge'
 import Withdrawals from './withdrawals'
 import Transfer from './transfer'
 import VipReport from './vipReport'
@@ -45,6 +46,8 @@ class Me extends Component {
                 return (<OpenLink />)
             case 'topUp':               // 充值
                 return (<TopUp />)
+            case 'charge':               // 充值
+                return (<Charge />)
             case 'withdrawals':         // 提现
                 return (<Withdrawals />)
             case 'transfer':            // 转账
