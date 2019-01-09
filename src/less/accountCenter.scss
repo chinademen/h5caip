@@ -504,3 +504,21 @@
         }
     }
 }
+.list{
+    display: flex;
+    .icon{
+        width: 10%;
+        line-height: 100%;
+        img{
+            width: 0.25rem;
+            display: inline-block;
+            padding: 0.1rem 0 0 0.1rem;
+        }
+    }
+    .radioItem{
+        width: 90%;
+    }
+}
+.nextBtn{
+    height: 0.4rem;
+}
