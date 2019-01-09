@@ -48,7 +48,7 @@ class TopUp extends Component {
                         </div>
                     ))}
                 </List>
-                <div className="nextBtn" onClick={() => { this.handlePush('/me/announcementDetail') }}>下一步</div>
+                <div className="nextBtn" onClick={() => { this.handlePush('/me/charge') }}>下一步</div>
             </div>
         );
     }

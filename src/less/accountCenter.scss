@@ -532,3 +532,44 @@
     color: #fff;
     font-size: 0.16rem;
 }
+.charge{
+    
+    background:#fff; 
+    .chargeInput{
+        padding-top: 0.5rem;
+        height: 0.4rem;
+        line-height: 0.4rem;
+        text-align: center;
+       input{
+            width:1rem;
+            height: 0.3rem;
+            margin-left: 0.2rem;
+            border: 0.01rem solid #ccc;
+        } 
+    }
+    .chargebtn{
+        height: 0.4rem;
+        padding: 0.2rem 10%;
+        p{
+            width: 48%;
+            height: 0.4rem;
+            line-height: 0.4rem;
+            text-align: center;
+            float: left;
+        }
+        .back{
+            background: #ccc;
+            color: #666;
+        }
+        .conform{
+            float: right;
+            background-color: #3d9bff;
+            color: #333;
+        }       
+    }
+    .chargeTips{
+        padding: 5%;
+        color: #666;
+        line-height: 0.3rem;
+    }
+}
