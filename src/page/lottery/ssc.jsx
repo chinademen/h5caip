@@ -228,7 +228,7 @@ class SSC extends Component {
                         <b onClick={() => { window.history.go(-1) }} className="show"></b>
                     </span>
                     <h3 className="navTitle"> 重庆时时彩-五星直选 </h3>
-                    <span className="navBtn" onClick={() => { window.open('/chat', '_self') }}>
+                    <span className="navBtn" onClick={() => { window.open('/chat/index.html', '_self') }}>
                         <b className="chat"></b>
                     </span>
                 </div>
