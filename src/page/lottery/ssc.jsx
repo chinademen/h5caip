@@ -1,9 +1,10 @@
 import React, { Component } from "react";
 import { Tabs, Flex, Grid } from "antd-mobile";
-
+import { withRouter } from 'react-router-dom';
 import "../../less/lottery.scss";
 
 // 彩种组件
+@withRouter
 class LotteryTypes extends Component {
     chooseNumber() {
         return (
@@ -58,9 +59,9 @@ class LotteryTypes extends Component {
                         <p> 00:00:24 </p>
                     </Flex.Item>
                 </Flex>
-                
+
                 <div className="lottery_type">
-                    
+
                 </div>
 
                 {["万", "千", "百", "十", "个"].map((val, i) => {
@@ -81,7 +82,7 @@ class LotteryTypes extends Component {
                 <div className="lottery_tabBar">
                     <div className="left">19600.000/0.0%</div>
                     <div className="mid">0注</div>
-                    <div className="right"> 确定 </div>
+                    <div className="right"  onClick={() => {  this.props.history.push('/basket'); }}> 确定 </div>
                 </div>
             </div>
         );
@@ -131,28 +132,28 @@ class GameShows extends Component {
             list: [
                 {
                     name: "前二直选",
-                    dec:"在万位、千位、百位、十位、个位上的任意位置，选择1个号码作为一注，选号与相同位置上的开奖号码一致，即中奖。中奖金额为18.5元。"
+                    dec: "在万位、千位、百位、十位、个位上的任意位置，选择1个号码作为一注，选号与相同位置上的开奖号码一致，即中奖。中奖金额为18.5元。"
                 },
                 {
                     name: "前二直选",
-                    dec:"在万位、千位、百位、十位、个位上的任意位置，选择1个号码作为一注，选号与相同位置上的开奖号码一致，即中奖。中奖金额为18.5元。"
+                    dec: "在万位、千位、百位、十位、个位上的任意位置，选择1个号码作为一注，选号与相同位置上的开奖号码一致，即中奖。中奖金额为18.5元。"
                 }
             ]
         }));
         return (
             <div className="gameShows_list">
                 {
-                    dataList.map((item,i)=>{
-                        return(
-                            <div key={ i }>
-                                <div className="title"> { item.title } </div>
+                    dataList.map((item, i) => {
+                        return (
+                            <div key={i}>
+                                <div className="title"> {item.title} </div>
                                 <ul>
                                     {
-                                        item.list.map((val,e)=>{
-                                            return(
-                                                <li  key={ e }> 
-                                                    <span> { val.name } </span> 
-                                                    <span> { val.dec } </span>
+                                        item.list.map((val, e) => {
+                                            return (
+                                                <li key={e}>
+                                                    <span> {val.name} </span>
+                                                    <span> {val.dec} </span>
                                                 </li>
                                             )
                                         })
@@ -167,6 +168,7 @@ class GameShows extends Component {
     }
 }
 
+@withRouter
 class SSC extends Component {
     constructor(props) {
         super(props);
@@ -175,12 +177,21 @@ class SSC extends Component {
         };
     }
     render() {
-        const tabBarUnderlineStyle ={
-            border:'1px solid #3d9bff'
+        const tabBarUnderlineStyle = {
+            border: '1px solid #3d9bff'
         }
 
         return (
             <div>
+                <div className="appNav">
+                    <span className="navBack">
+                        <b onClick={() => { window.history.go(-1) }} className="show"></b>
+                    </span>
+                    <h3 className="navTitle"> 重庆时时彩-五星直选 </h3>
+                    <span className="navBtn" onClick={() => {  window.open('/chat','_self') }}>
+                        <b className="chat"></b>
+                    </span>
+                </div>
                 <Tabs tabBarInactiveTextColor="#999999" tabBarUnderlineStyle={tabBarUnderlineStyle} tabBarActiveTextColor="#3d9bff" tabs={this.state.tabs} initialPage={0} >
                     <div className="lottery_number">
                         <LotteryTypes />

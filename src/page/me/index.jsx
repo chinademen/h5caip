@@ -7,7 +7,7 @@ import FeedBack from './feedBack'
 import InsideIfo from './insideIfo'
 import LevelMangement from './levelMangement'
 import LevelOrder from './levelOrder'
-import LogOut from './logOut'
+
 import OpeningAccount from './openingAccount'
 import OpenLink from './openLink'
 import TopUp from './topUp'
@@ -38,8 +38,6 @@ class Me extends Component {
                 return (<LevelMangement />)
             case 'levelOrder':          // 下级订单
                 return (<LevelOrder />)
-            case 'logOut':              // 退出登录
-                return (<LogOut />)
             case 'openingAccount':      // 人工开户
                 return (<OpeningAccount />)
             case 'openLink':            // 链接开户

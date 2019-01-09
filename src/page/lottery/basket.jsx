@@ -129,7 +129,7 @@ class BetRecord extends Component {
                 <div className="pop none">
                         <div className="popMain">
                             <p className="tit">确认投注</p>
-                            <div class="top">
+                            <div className="top">
                                 <p className="l_name">重庆时时彩</p>
                                 <p className="l_pired">期号：20170129-111</p>
                             </div>                      
@@ -144,10 +144,10 @@ class BetRecord extends Component {
                             <div className="btn_order"> <p>确认投注</p> </div>
                         </div>
                 </div>
-                <div className="pop">
+                <div className="pop none">
                         <div className="popMain">
                             <p className="tit">确认投注</p>
-                            <div class="top">
+                            <div className="top">
                                 <p className="l_name">重庆时时彩</p>
                                 <p className="l_pired">期号：20170129-111</p>
                             </div>                      

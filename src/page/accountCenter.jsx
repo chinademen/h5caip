@@ -91,7 +91,7 @@ class AccountCenter extends Component {
                 { img:require('../img/icon_2.png') ,title:'站内信',path:'/me/insideIfo'},
                 { img:require('../img/icon_3.png') ,title:'意见反馈',path:'/me/feedBack'},
                 { img:require('../img/icon_4.png') ,title:'账户设置',path:'/me/accountSet'},
-                { img:require('../img/icon_5.png') ,title:'退出登录',path:'/me/logOut'},
+                { img:require('../img/icon_5.png') ,title:'退出登录',path:'/login'},
             ]
         };
     }
