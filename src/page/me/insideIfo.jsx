@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Tabs,Button } from "antd-mobile";
 import { withRouter } from 'react-router-dom';
+import AppNav from "../../template/appNav"
 @withRouter
 class InsideIfo extends Component {
     constructor(props) {
@@ -25,8 +26,15 @@ class InsideIfo extends Component {
         const tabBarUnderlineStyle = {
             'border': 'none'
         }
+        const parm = {
+            title: "站内信",
+            classNameLeft: "",
+            classNameRight: "",
+            show: true
+        }
         return (
             <div className="insideIfo">
+            <AppNav data={parm} />
                 <Tabs tabBarInactiveTextColor="#999999" tabBarActiveTextColor="#d13737" tabBarUnderlineStyle={tabBarUnderlineStyle} swipeable={false} tabs={this.state.tabs} initialPage={0}>
                     <ul>
                         {

@@ -9,3 +9,54 @@ ul{
         list-style: none;
     }
 }
+
+
+.appNav{
+    height: 0.5rem;
+    background: #38393b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0.12rem;
+    .navTitle{
+        flex: 2;
+        font-size: 0.18rem;
+        color: #fff;
+        text-align: center;
+        margin-bottom: 0 !important;
+    }
+    .navBack{
+        flex: 1;
+        b{
+            display: block;
+            width: 0.1rem;
+            height: 0.17rem;
+            background: url('../img/back.png');
+            background-size: cover;
+        }
+        b.hide{
+            display: none;
+        }
+    }
+    .navBtn{
+        flex: 1;
+        b{
+            float: right;
+            &:nth-child(2){
+                margin-right: 0.31rem;
+            }
+        }
+        .service{
+            width: 0.235rem;
+            height: 0.195rem;
+            background: url('../img/service.png');
+            background-size: cover;
+        }
+        .report{
+            width: 0.205rem;
+            height: 0.205rem;
+            background: url('../img/report.png');
+            background-size: cover;
+        }
+    }
+}

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Tabs, Button, Picker } from "antd-mobile";
-
+import AppNav from "../../template/appNav"
 
 class Xiaji extends Component {
     constructor(props) {
@@ -141,9 +141,16 @@ class Transfer extends Component {
     render() {
         const tabBarUnderlineStyle = {
             'border': 'none'
+        };
+        const parm = {
+            title: "转账",
+            classNameLeft: "",
+            classNameRight: "",
+            show: true
         }
         return (
             <div className="transfer">
+             <AppNav data={parm} />
                 <Tabs tabBarInactiveTextColor="#999999" tabBarActiveTextColor="#d13737" tabBarUnderlineStyle={tabBarUnderlineStyle} swipeable={false} tabs={this.state.tabs} initialPage={0}>
                     <Pingtai />
                     <Xiaji />

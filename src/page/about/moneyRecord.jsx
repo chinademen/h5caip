@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Tabs } from "antd-mobile";
-
+import AppNav from "../../template/appNav"
 
 
 class List extends Component {
@@ -54,8 +54,15 @@ class MoneyRecord extends Component {
             { title: "投注", to: '1313.3', change: '+8' },
             { title: "转移", to: '1313.3', change: '+9' },
         ]
+        const parm = {
+            title: "资金记录",
+            classNameLeft: "",
+            classNameRight: "",
+            show: true
+        }
         return (
             <div className="moneyRecord">
+               <AppNav data={parm} />
                 <Tabs tabBarInactiveTextColor="#999999" tabBarActiveTextColor="#d13737" tabBarUnderlineStyle={tabBarUnderlineStyle} swipeable={false} tabs={this.state.tabs} initialPage={0}>
                     <List data={data} />
                     <List data={new Array(data[0])} />

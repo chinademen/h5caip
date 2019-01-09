@@ -9,7 +9,6 @@ class BetRecord extends Component {
             datavalue1:'2元',
             data01:[],
             datavalue2:'1',
-            data01:[],
             data:[
                 {
                     play:"后三直选",//彩票名称
@@ -64,7 +63,7 @@ class BetRecord extends Component {
         this.props.history.push(link);
     } 
     render() {
-        const { datavalue1,datavalue2,datavalue3 } = this.state
+        const { datavalue1,datavalue2 } = this.state
         return (
             <div className="basket">
                 <div className="basketTop">

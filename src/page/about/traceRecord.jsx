@@ -3,7 +3,7 @@ import React, { Component } from "react";
 import { Picker } from 'antd-mobile';
 import AppTabBar from "../../template/appTabBar";
 import { withRouter } from 'react-router-dom';
-
+import AppNav from "../../template/appNav"
 @withRouter
 class TraceRecord extends Component {
     constructor(props){
@@ -97,9 +97,16 @@ class TraceRecord extends Component {
         this.props.history.push(link);
     } 
     render() {
-        const { datavalue1,datavalue2,datavalue3 } = this.state
+        const { datavalue1,datavalue2,datavalue3 } = this.state;
+        const parm = {
+            title: "追号记录",
+            classNameLeft: "",
+            classNameRight: "",
+            show: true
+        }
         return (
             <div className="BetRecord">
+             <AppNav data={parm} />
                 <div className="seachType">
                     <Picker
                         data={this.state.data01}

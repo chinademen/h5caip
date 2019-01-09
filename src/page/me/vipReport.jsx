@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Picker } from 'antd-mobile';
+import AppNav from "../../template/appNav"
 class VipReport extends Component {
     constructor(props) {
         super(props);
@@ -46,9 +47,16 @@ class VipReport extends Component {
         }, 120);
     };
     render() {
-        const { datavalue1, datavalue2 } = this.state
+        const { datavalue1, datavalue2 } = this.state;
+        const parm = {
+            title: "会员报表",
+            classNameLeft: "",
+            classNameRight: "",
+            show: true
+        }
         return (
             <div className="levelOrder vipReport">
+            <AppNav data={parm} />
                 <ul className="levelOrder_title">
                     <li>
                         <Picker
