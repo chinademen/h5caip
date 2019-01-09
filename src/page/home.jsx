@@ -4,6 +4,7 @@ import { withRouter } from 'react-router-dom';
 import "../less/home.scss";
 
 import AppTabBar from "../template/appTabBar";
+import AppNav from "../template/appNav"
 
 // 轮播
 class Banner extends Component {
@@ -85,8 +86,15 @@ class Home extends Component {
         const tabBarUnderlineStyle ={
             'border':'none'
         }
+        const parm = {
+            title:"金三角彩票",
+            classNameLeft:"service",
+            classNameRight:"report",
+            show:false
+        }
         return (
             <div className="home">
+                <AppNav data={parm} />
                 <Tabs tabBarInactiveTextColor="#999999" tabBarActiveTextColor="#d13737" tabBarUnderlineStyle={ tabBarUnderlineStyle } swipeable={false} tabs={this.state.tabs} initialPage={0}>
                     <Lottery />
                     <Game data='agame_bg' />

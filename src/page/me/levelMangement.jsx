@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { SearchBar } from 'antd-mobile';
-
+import AppNav from "../../template/appNav"
 class AppTabBle extends Component {
     render() {
         return (
@@ -57,8 +57,15 @@ class LevelMangement extends Component {
         }
     }
     render() {
+        const parm = {
+            title: "下级管理",
+            classNameLeft: "",
+            classNameRight: "",
+            show: true
+        }
         return (
             <div className="levelMangement">
+             <AppNav data={parm} />
                 <SearchBar placeholder="搜索" maxLength={8} />
                 <AppTabBle data={this.state.tableList} />
             </div>

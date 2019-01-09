@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { withRouter } from 'react-router-dom';
+import AppNav from "../../template/appNav"
 @withRouter
 class Announcement extends Component {
     constructor(props){
@@ -10,8 +11,15 @@ class Announcement extends Component {
         this.props.history.push(link);
     }
     render() {
+        const parm = {
+            title: "下级公告",
+            classNameLeft: "",
+            classNameRight: "",
+            show: true
+        }
         return (
             <div className="announcement">
+             <AppNav data={parm} />
                 <ul>
                     <li onClick={ ()=>{ this.handlePush('/me/announcementDetail') }} >
                         <p>【平台公告】 重庆时时彩,撤单公告 </p>

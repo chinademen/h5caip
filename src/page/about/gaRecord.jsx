@@ -1,6 +1,7 @@
 //GA记录
 import React, { Component } from "react";
 import { Picker } from 'antd-mobile';
+import AppNav from "../../template/appNav"
 class GaRecord extends Component {
     constructor(props) {
         super(props);
@@ -101,9 +102,16 @@ class GaRecord extends Component {
         this.props.history.push(link);
     }
     render() {
-        const { datavalue1, datavalue2 } = this.state
+        const { datavalue1, datavalue2 } = this.state;
+        const parm = {
+            title: "GA记录",
+            classNameLeft: "",
+            classNameRight: "",
+            show: true
+        }
         return (
             <div className="BetRecord AGRecord ">
+            <AppNav data={parm} />
                 <div className="seachType">
                     <Picker
                         data={this.state.data01}

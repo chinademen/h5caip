@@ -1,5 +1,6 @@
 // 注单详情
 import React, { Component } from "react";
+import AppNav from "../../template/appNav"
 class traceDetail extends Component {
     constructor(props){
         super(props);
@@ -24,8 +25,15 @@ class traceDetail extends Component {
         };
     }
     render() {
+        const parm = {
+            title: "追号详情",
+            classNameLeft: "",
+            classNameRight: "",
+            show: true
+        }
         return (
             <div className="recordDetail">
+            <AppNav data={parm} />
                 {this.state.data.map((item,i) => {
                     return (                          
                         <div className="detailWrap" key={i}>

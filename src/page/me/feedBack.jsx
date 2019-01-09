@@ -1,9 +1,17 @@
 import React, { Component } from "react";
 import {  Button } from "antd-mobile";
+import AppNav from "../../template/appNav"
 class FeedBack extends Component {
     render() {
+        const parm = {
+            title: "意见反馈",
+            classNameLeft: "",
+            classNameRight: "",
+            show: true
+        }
         return (
             <div className="feedBack">
+             <AppNav data={parm} />
                 <ul>
                     <li> 
                         <span> 标题: </span>

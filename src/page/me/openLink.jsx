@@ -1,9 +1,17 @@
 import React, { Component } from "react";
 import { Button } from "antd-mobile";
+import AppNav from "../../template/appNav"
 class OpenLink extends Component {
     render() {
+        const parm = {
+            title: "链接开户",
+            classNameLeft: "",
+            classNameRight: "",
+            show: true
+        }
         return (
             <div className="openLink">
+             <AppNav data={parm} />
                 <ul>
                     <li>
                         <span> 账号类型 :  </span>

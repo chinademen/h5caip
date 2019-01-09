@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Tabs, Button } from "antd-mobile";
+import AppNav from "../../template/appNav"
 const nowTimeStamp = Date.now();
 const now = new Date(nowTimeStamp);
 
@@ -16,7 +17,7 @@ class Record extends Component {
         }
     }
     render() {
-        const { list } = this.state
+        const { list } = this.state;
         return (
             <div className="record">
                 <div className="datePicker">
@@ -108,8 +109,15 @@ class Withdrawals extends Component {
         const tabBarUnderlineStyle = {
             'border': 'none'
         }
+        const parm = {
+            title: "提现",
+            classNameLeft: "",
+            classNameRight: "",
+            show: true
+        }
         return (
             <div className="withdrawals">
+             <AppNav data={parm} />
                 <Tabs tabBarInactiveTextColor="#999999" tabBarActiveTextColor="#d13737" tabBarUnderlineStyle={tabBarUnderlineStyle} swipeable={false} tabs={this.state.tabs} initialPage={0}>
                     <Yue />
                     <Record />
